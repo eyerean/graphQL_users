@@ -8,7 +8,7 @@
     },
     {
       "id": "31",
-      "firstName": "Sam",
+      "firstName": "Marina",
       "age": 31,
       "companyId": "2"
     },
@@ -21,7 +21,8 @@
     {
       "firstName": "Maria",
       "age": 26,
-      "id": "DlYm35G"
+      "id": "DlYm35G",
+      "companyId": "3"
     }
   ],
   "companies": [
