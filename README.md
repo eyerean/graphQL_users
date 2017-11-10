@@ -1,4 +1,4 @@
-A GraphQL try-out, meant to work with a React FE.
+A GraphQL try-out with `json-server` for the BE and React for the FE.
 
 
 Run `yarn install` to install all dependencies.
