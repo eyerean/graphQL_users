@@ -11,7 +11,7 @@ const {
 
 const CompanyType = new GraphQLObjectType({
   name: 'Company',
-  fields: () => ({
+  fields: () => ({ // arrow function here resolves circular references error
     id: {type: GraphQLString},
     name: {type: GraphQLString},
     description: {type: GraphQLString},
@@ -64,12 +64,12 @@ const RootQuery = new GraphQLObjectType({
   }
 });
 
-//used to change our data
+// used to change our data
 const mutation = new GraphQLObjectType({
   name: 'Mutation',
   fields: {
     addUser: {
-      type: UserType,
+      type: UserType, // the type of data the resolve function returns
       args: {
         firstName: {type: new GraphQLNonNull(GraphQLString)},
         age: {type: new GraphQLNonNull(GraphQLInt)},
